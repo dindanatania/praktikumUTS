@@ -1,0 +1,33 @@
+package uts.prak.no4;
+
+public class LimasSegiEmpat {
+    //ATRIBUT
+    double luasAlas;
+    double luasSelubungLimas;
+    double tinggi;
+    //KONSTRUKTOR
+    LimasSegiEmpat(){
+    }
+    LimasSegiEmpat(double luasAlasBaru, double luasSelubungLimasBaru, double tinggiBaru){
+       this.luasAlas = luasAlasBaru;
+       this.luasSelubungLimas = luasSelubungLimasBaru;
+       this.tinggi = tinggiBaru;
+    }
+    //FUNGSI
+    public double getLuas(){
+        return luasAlas + luasSelubungLimas;
+    }
+    public double getVolume(){
+       return 1.0/3.0 * luasAlas * tinggi;
+    }
+    //ENCAP
+    public void setLuasAlas(double luasAlasBaru){
+        this.luasAlas = luasAlasBaru;
+    }
+    public void setLuasSelubung(double luasSelubungLimasBaru){
+        this.luasSelubungLimas = luasSelubungLimasBaru;
+    }
+    public void setTinggi(double tinggiBaru){
+        this.tinggi = tinggiBaru;
+    }
+}
