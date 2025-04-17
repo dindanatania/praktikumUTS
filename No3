@@ -1,0 +1,25 @@
+package uts.prak.no3;
+
+import java.util.Scanner;
+
+public class UTSPrakNo3 {
+    public static int sumDigits(long n){
+        int total = 0;
+        
+        while(n != 0){
+            total += n % 10; //ambil digit terakhir
+            n /= 10; //hapus digit terakir
+        }
+        return total;
+    }
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.println("Masukkan bilangan bulat: ");
+        long angka = input.nextLong();
+        
+        int hasil = sumDigits(angka);
+        System.out.println("Jumlah semua digit dari "+angka+" adalah: "+hasil);
+    }
+    
+}
